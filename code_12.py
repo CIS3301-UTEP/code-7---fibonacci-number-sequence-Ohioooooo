@@ -10,7 +10,8 @@ def get_fibonacci_number_sequence(number):
     
     stored_numbers = []
     for i in range(1, number + 1):  # Loop through numbers. 
-        print(get_fibonacci_number(i))  # Print the fibonacci numbers in the order depending on the number input.
+        stored_numbers.append(get_fibonacci_number(i))
+    return stored_numbers  # Changed this line to print a list rather than the numbers individually as what it looks like from tes_code.
 
 
 
@@ -18,4 +19,4 @@ def get_fibonacci_number_sequence(number):
 if __name__ == "__main__":
     print(get_fibonacci_number(6))  # this prints number in the sequence in the position given by user.
 
-    get_fibonacci_number_sequence(9)  # this prints the sequence 1 by 1. 
+    print(get_fibonacci_number_sequence(9))  # this prints the sequence 1 by 1. 
