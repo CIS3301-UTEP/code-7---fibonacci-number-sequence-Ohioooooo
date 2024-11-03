@@ -1,5 +1,8 @@
 def get_fibonacci_number(position):
-    pass #Remove this line and insert your code here. Do not forget this function implements recursion.
+    if position == 1:
+        return 1
+    elif position == 2: 
+        return 1
 
 def get_fibonacci_number_sequence(number):
     pass #Remove this line and insert your code here. Do not forget to use get_fibonacci_number to create your list of numbers.
